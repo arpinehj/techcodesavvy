@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCode Savvy - Web Development</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="cover">
+    <div id="cover" class="container-fluid logo">
+        <a href="index.html"><img src="img/logo.jpeg" alt="TechCode Savvy logo" class="mx-auto d-block img-fluid"  width="280" height="345"></a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" onclick="openNav()" class="navbar navbar-expand-lg sticky-top">
+    <!-- NAVBAR LOGO SHOWN ON MOBILE -->  
+    <div class="navbar-brand">
+      <a class="nav-link d-lg-none" href="index.html">TechCode Savvy</a>
+    </div>  
+    <!-- NAVBAR TOGGLER -->  
+    <button class="navbar-toggler d-lg-none" onclick="openNav()" type="button">
+      <span class="navbar-toggler-close"></span>
+    </button>
+    <!-- NAVBAR & RESPONSIVE --> 
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row p-2 p-lg-0 mobileMenu" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="webdevelopment.html">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pythonprogramming.html">Python Programming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasql.html">Data & SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right mt-2 ml-auto">
+            <li>
+              <input type="text" method="put" id="search" placeholder="Search" value="">
+              <button onclick="sendToPage()" type="submit" class="fa fa-search"></button>
+            </li>
+          </ul>
+    </div>
+  </nav>
+  <div id="overlay"></div>
+
+
+<!-- WEBDEV BLOG -->
+<section class="web-dev">
+    <div class="row mx-auto">
+        <div class="col-md-12">
+            <div class="blog">
+                <div class="container">
+                    <h2 class="text-center">Web Development</h2>
+                    <h5 class="text-center">24 November 2020</h5>
+                    <img src="img/ourplasticocean.jpeg" alt="Our Plastic Ocean Website Image" class="mt-3 mx-auto d-block img-fluid"/>
+                    <p class="mt-5">During the COVID-19 pandemic in 2020, I decided to look for more information about Code First Girls and 
+                        try one of their courses after completing BrightNetwork Internship Experience Technology.
+                        My first course was Introduction to Web Development and after applying, I 
+                        received materials such as a guide and presentation documents to get ready for the course.
+                    </p>
+                    <p>
+                        We used Visual Studio Code as the IDE. It is very easy to download and it is free!
+                        I also use it for personal projects!
+
+                    <h5><b>Description</b></h5>
+                        "An introduction to web development for budding coders, and those who need somewhere to get started!
+                        Learn the fundamental skills of front-end web dev, including three dedicated sessions on JavaScript. 
+                        By the end of the course, you will be able to build a website from scratch!"
+                    </p>
+
+                    <h5><b>Sessions</b></h5>
+                    <ul>
+                        <li>HTML basics</li>
+                        <li>CSS basics</li>
+                        <li>Recap & Project Design</li>
+                        <li>Javascript Part 1 (Overview, data types)</li>
+                        <li>Javascript Part 2 (Loops, functions and scope)</li>
+                        <li>Javascript Part 3 (Objects and the DOM)</li>
+                        <li>Github, Frameworks & Project work</li>
+                        <li>Project presentations & Careers in Web Dev</li>
+                    </ul>
+                    <h5><b>Final Project</b></h5>
+                    <div class="row wireframe">
+                        <p class="col-md-8">In week 3, we were randomly assigned into groups of four and we started to think of different ideas
+                            that we wanted to create a website. I suggested to create a website that is meaningful and impactful
+                            so we decided to focus on plastic ocean. 
+                            There was a criteria in order to have a project success:
+                            planning, communication, skills, tools, process, management, teamwork.
+                            We also had two lists of 'must have' and 'nice to have' to follow and made sure
+                            to use the skills and tools that we learnt into practice in order to receive a certificate.
+                            <br><br>
+                            We communicated and planned the website by assigning us tasks such as creating wireframes and
+                            pages and discussing on web design. I created the wireframes and suggested each page's topic such as news
+                            and get involve with charities. The wireframes helped us to create the HTML and CSS and we added some Javascript
+                            such as slideshow and scroll to top button to allow user interactivity.    
+                            By the end of the course, only two, including myself, were working on the project.
+                            <br><br>
+                            Finally, we organised our notes for our presentation and allowed our coursemates to ask us questions. They gave us their
+                            thoughts about the website and they all liked it! We completed all of the points except one which is the 
+                            website responsiveness in the criteria due to the timing.
+                            Therefore, we didn't receive
+                            a certificate for project excellence but received one for completing the course and project on time! 
+                            <br><br>
+                            After finishing the course, I spent some time getting the website responsive!
+                            <br><br>
+                            Challenges included: getting the website responsive and putting text on image.
+                            <br><br>
+                            You can view the website by clicking the button below!
+                        </p>
+                        <div class="col-md-4 ml-auto">
+                            <img src="img/wireframehomepage.jpeg" alt="Our Plastic Ocean Homepage Wireframe Image">
+                            <figcaption>Our Plastic Ocean homepage wireframe</figcaption>
+                        </div>
+                    </div>
+                    <div class="link d-flex justify-content-center">
+                        <button class="btn btn-default"><a href="https://arpinehjaniyan.github.io/ourplasticocean" target="_blank">Link to the website</a></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-3">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/codefirstgirls" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/codefirstgirls/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>about</h2>
+        <p>This blog is about my experience with Code First Girls after completing all three courses:
+          Web Development, Python and SQL.
+          I hope this will inspire young female/non-binary individuals to apply the courses
+          and lead them to get a career in tech.
+          It is time to close the gender gap in tech and get more girls into the field.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>links</h2>
+        <ul>
+          <li><a href="webdevelopment.html">Web Development</a></li>
+          <li><a href="pythonprogramming.html">Python Programming</a></li>
+          <li><a href="datasql.html">Data & SQL</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>code first girls</h2>
+        <p class="link">"Code First Girls are dedicated to transforming tech by providing the skills, 
+          space and inspiration for women to become kick-ass developers and future leaders."
+          <br><br>
+          Visit <a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a> for more information.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-5 copyright">
+        Copyright &copy; 2021 <a href="index.html">TechCode Savvy</a>
+    </div>
+</footer>
+
+  
+
+<script src="script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCode Savvy - Python Programming</title>
+    <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+<div class="cover">
+    <div class="container-fluid logo">
+        <a href="index.html"><img src="img/logo.jpeg" alt="TechCode Savvy logo" class="mx-auto d-block img-fluid"  width="280" height="345"></a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" onclick="openNav()" class="navbar navbar-expand-lg sticky-top">
+    <!-- NAVBAR LOGO SHOWN ON MOBILE -->  
+    <div class="navbar-brand">
+      <a class="nav-link d-lg-none" href="index.html">TechCode Savvy</a>
+    </div>  
+    <!-- NAVBAR TOGGLER -->  
+    <button class="navbar-toggler d-lg-none" onclick="openNav()" type="button">
+      <span class="navbar-toggler-close"></span>
+    </button>
+    <!-- NAVBAR & RESPONSIVE --> 
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row p-2 p-lg-0 mobileMenu" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webdevelopment.html">Web Development</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pythonprogramming.html">Python Programming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasql.html">Data & SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right mt-2 ml-auto">
+            <li>
+              <input type="text" method="put" id="search" placeholder="Search" value="">
+              <button onclick="sendToPage()" type="submit" class="fa fa-search"></button>
+            </li>
+          </ul>
+    </div>
+</nav>
+<div id="overlay"></div>
+
+
+<!-- PYTHON BLOG -->
+<section class="python">
+    <div class="row mx-auto">
+        <div class="col-md-12">
+            <div class="blog">
+                <div class="container">
+                    <h2 class="text-center">Python Programming</h2>
+                    <h5 class="text-center">25 March 2021</h5>
+                    <div id="carousel-python" class="carousel slide" data-ride="carousel" data-interval="false" >
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/harrypotter1.jpeg" alt="Harry Potter Top Trumps App Image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/harrypotter2.jpeg" alt="Harry Potter Top Trumps App Image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/harrypotter3.jpeg" alt="Harry Potter Top Trumps App Image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/deathlyhallows.jpeg" alt="Harry Potter Top Trumps App The Deathly Hallows Symbol 'You Win' Image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/hpglasses.jpeg" alt="Harry Potter Top Trumps App Harry Potter's Glasses 'You Lose' Image">
+                          </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-python" data-slide="prev">
+                          <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        </a>
+                        <a class="carousel-control-next" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-python" data-slide="next">
+                          <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </a>
+                      </div>
+                    <p class="mt-5">After completing Introduction to Web Development, I decided to expand my knowledge and skills.
+                        I applied Python Programming and prior to starting the course, I tried BrightNetwork Technology 
+                        Academy: Starting To Code In Python to give me an idea of how Python works. I believe that Python was much 
+                        easier to understand than Javascript. 
+
+                    </p>
+                    <p>
+                        We used PyCharm as the IDE.
+                    </p>
+                    <p>
+                    <h5><b>Description</b></h5>
+                    "A beginner-friendly course to help students learn the fundamentals of programming through problem-solving 
+                    in Python. Build and deploy your first web application with us using this high level programming language! 
+                    You’ll be well equipped to start work on apps and back-end coding at the course end."
+                    </p>
+
+                    <h5><b>Sessions</b></h5>
+                    <ul>
+                        <li>Python basics - Data types and Variables</li>
+                        <li>Problem solving with Turtle</li>
+                        <li>Decision making in your program</li>
+                        <li>Lists and Dictionaries</li>
+                        <li>Third party libraries and APIs</li>
+                        <li>Building & deploying your app (Project Planning)</li>
+                        <li>Building & deploying your app (Worktime)</li>
+                        <li>Project Presentations</li>
+                    </ul>
+                    <h5><b>Final Project</b></h5>
+                    <div class="row">
+                        <p class="col-md-8">I had a lot of fun creating this project as I like Harry Potter and playing Top Trumps. But creating it was not
+                            as straightforward as we thought. We encountered few problems that we were not sure how to solve but fortunately, we were
+                            able to use Google and if the problem wasn't solved, the instructors were kind enough to help us.
+                            <br><br>
+                            We were given three project briefs to choose and we chose Top Trumps Harry Potter. After completing the required tasks and extended tasks,
+                            we added our own ideas such as allowing the user to type how many rounds of the game they want to play 
+                            and if they win or lose, a turtle graphics is shown in a new window.
+                            I changed the colours of the text to allow the user to read easier and it would be appealing. 
+                            The statistics of each character were imported from a CSV file. The user is given five randomly generated characters 
+                            to choose and they play against the computer. The scores are counted and shown at the end of the game. They are
+                            also written to another CSV file for the user to read the scores.
+                            <br><br>
+                            Few hours before the last session, as a group we decided to have a Slack video chat to prepare for the presentation and
+                            we added comments to allow us remember and explain the functions. The presentation was successful and we received a certificate for 
+                            project excellence after my coursemates voted.
+                            <br><br>
+                            Challenges included: 
+                            randomly picking a row and making the function return the stats of that character and completing the extended tasks 
+                            e.g. recording the outcome of each round and total scores in a file, fixing the wrong result 
+                            and choosing a character from five randomly choices.
+                        </p>
+                        <div class="col-md-4 ml-auto">
+                            <img src="img/hpscorecsv.jpeg" alt="Top Trumps Harry Potter Score CSV Image">
+                            <figcaption>An example of Top Trumps Harry Potter Score CSV file after playing five rounds</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-3">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/codefirstgirls" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/codefirstgirls/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>about</h2>
+        <p>This blog is about my experience with Code First Girls after completing all three courses:
+          Web Development, Python and SQL.
+          I hope this will inspire young female/non-binary individuals to apply the courses
+          and lead them to get a career in tech.
+          It is time to close the gender gap in tech and get more girls into the field.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>links</h2>
+        <ul>
+          <li><a href="webdevelopment.html">Web Development</a></li>
+          <li><a href="pythonprogramming.html">Python Programming</a></li>
+          <li><a href="datasql.html">Data & SQL</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>code first girls</h2>
+        <p class="link">"Code First Girls are dedicated to transforming tech by providing the skills, 
+          space and inspiration for women to become kick-ass developers and future leaders."
+          <br><br>
+          Visit <a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a> for more information.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-5 copyright">
+        Copyright &copy; 2021 <a href="index.html">TechCode Savvy</a>
+    </div>
+</footer>
+
+  
+
+<script src="script/index.js"></script>
+</body>
+</html>

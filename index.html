@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCode Savvy</title>
+  <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+<div class="cover">
+  <div class="container-fluid logo">
+      <a href="index.html"><img src="img/logo.jpeg" alt="TechCode Savvy logo" class="mx-auto d-block img-fluid"  width="280" height="345"></a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" onclick="openNav()" class="navbar navbar-expand-lg sticky-top">
+  <!-- NAVBAR LOGO SHOWN ON MOBILE -->  
+  <div class="navbar-brand">
+    <a class="nav-link d-lg-none" href="index.html">TechCode Savvy</a>
+  </div>  
+  <!-- NAVBAR TOGGLER -->  
+  <button class="navbar-toggler d-lg-none" type="button">
+    <span class="navbar-toggler-close"></span>
+  </button>
+  <!-- NAVBAR & RESPONSIVE --> 
+  <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row p-2 p-lg-0 mobileMenu" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="webdevelopment.html">Web Development</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pythonprogramming.html">Python Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datasql.html">Data & SQL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tips.html">Tips</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-right mt-2 ml-auto">
+          <li>
+            <input type="text" method="put" id="search" placeholder="Search" value="">
+            <button onclick="sendToPage()" type="submit" class="fa fa-search"></button>
+          </li>
+        </ul>
+  </div>
+</nav>
+<div id="overlay"></div>
+
+
+<!-- BLOG -->
+<div class="blog-container">
+  <div class="row mx-auto">
+    <div class="col-md-8">
+      <div class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div id="carousel-datasql" class="carousel slide" data-ride="carousel" data-interval="false" >
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/gymmanagement.jpeg" alt="Gym Management Database Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/classes.jpeg" alt="Gym Management Database Classes Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/innerjoin.jpeg" alt="Gym Management Database Inner Join Image">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-datasql" data-slide="prev">
+                  <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                </a>
+                <a class="carousel-control-next" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-datasql" data-slide="next">
+                  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h4>Data & SQL</h4>
+              <h5><i class="fa fa-database" style="color: #ff5773;"></i> 8 June 2021</h5>
+              <p>I decided to enrol in a final course, Data and SQL, as Code First Girls has been a fantastic opportunity
+                to learn and I wanted to add another programming language into my CV. 
+                Plus, I've been enjoying working on projects with girls and the courses have allowed me to...
+              </p>
+              <a href="datasql.html" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div id="carousel-python" class="carousel slide" data-ride="carousel" data-interval="false" >
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/harrypotter1.jpeg" alt="Harry Potter Top Trumps App Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/harrypotter2.jpeg" alt="Harry Potter Top Trumps App Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/harrypotter3.jpeg" alt="Harry Potter Top Trumps App Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/deathlyhallows.jpeg" alt="Harry Potter Top Trumps App The Deathly Hallows Symbol 'You Win' Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/hpglasses.jpeg" alt="Harry Potter Top Trumps App Harry Potter's Glasses 'You Lose' Image">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-python" data-slide="prev">
+                  <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                </a>
+                <a class="carousel-control-next" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-python" data-slide="next">
+                  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h4>Python Programming</h4>
+              <h5>&#128013; 25 March 2021</h5>
+              <p>After completing Introduction to Web Development course, I decided to expand my knowledge and skills.
+                I applied Python Programming and prior to starting the course, I tried BrightNetwork Technology Academy: 
+                Starting To Code In Python to...
+              </p>
+              <a href="pythonprogramming.html" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div id="carousel-webdev" class="carousel slide" data-ride="carousel" data-interval="false" >
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/ourplasticocean.jpeg" alt="Our Plastic Ocean Website Homepage Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/news.jpeg" alt="Our Plastic Ocean Website News Page Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/getinvolved.jpeg" alt="Our Plastic Ocean Website Get Involved Page Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/privacypolicy.jpeg" alt="Our Plastic Ocean Website Privacy Policy Page Image">
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-webdev" data-slide="prev">
+                  <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                </a>
+                <a class="carousel-control-next" style="font-size: 50px; color: #ff5773; opacity: 1;" href="#carousel-webdev" data-slide="next">
+                  <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h4>Web Development</h4>
+              <h5><i class="fa fa-code" style="color: #ff5773;"></i> 24 November 2020</h5>
+              <p>During the COVID-19 pandemic in 2020, I decided to find further information about Code First Girls and 
+                try one of their courses after completing BrightNetwork Internship Experience Technology. My first course was Introduction to Web
+                Development...
+              </p>
+              <a href="webdevelopment.html" class="btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SIDE BLOG -->
+    <div class="col-md-4">
+      <div class="side-blog">
+        <div class="container-fluid">
+          <p>Hi! Welcome to my blog!</p>
+          <p>I will be sharing my experience of completing Code First Girls courses as each course 
+            was unique and fun experience.</p>
+          <p>Code First Girls is an organisation with a clear goal: 
+            "Code First Girls are dedicated to transforming tech by providing the skills, 
+            space and inspiration for women to become kick-ass developers and future leaders."
+          </p>
+          <p>
+          They are the largest provider of free coding courses for women in the UK and their "2021 mission 
+            is to double community from 20,000, giving more women the opportunity to learn new skills 
+            and pursue great careers in tech."
+          </p>
+          <p>Each course was eight weeks in the evenings and were done remotely.
+            In order to be eligible you must be aged 18-23 OR have studied in the last two years OR be a student at a UK University.
+          </p>
+          <p>Courses they offer:
+            <ul>
+              <li>Classes:</li>
+              <ul>
+                <li>Web Dev</li>
+                <li>Python & Apps</li>
+                <li>Data & SQL</li>
+              </ul>
+              <li>Nanodegree (Data or Software)</li>
+              <li>MOOCs (Massive Open Online Courses - one-off taster sessions)</li>
+            </ul>
+            I recommend Code First Girls courses for female/non-binary identifying young individuals
+            across the UK and Ireland who are interested in learning to code and can commit couple of hours a week for eight weeks.
+            You can apply as a uni student, kickstarter or career switcher by <a href="https://codefirstgirls.org.uk/courses/" target="_blank">visiting their website</a>.
+          </p>
+            Make sure to follow them:
+          <p>
+            <a href="https://www.facebook.com/codefirstgirls" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/codefirstgirls/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+  <div class="row justify-content-center mb-5">
+    <div class="col-3">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/codefirstgirls" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/codefirstgirls/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>about</h2>
+      <p>This blog is about my experience with Code First Girls after completing all three courses:
+        Web Development, Python and SQL.
+        I hope this will inspire young female/non-binary individuals to apply the courses
+        and lead them to get a career in tech.
+        It is time to close the gender gap in tech and get more girls into the field.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h2>links</h2>
+      <ul>
+        <li><a href="webdevelopment.html">Web Development</a></li>
+        <li><a href="pythonprogramming.html">Python Programming</a></li>
+        <li><a href="datasql.html">Data & SQL</a></li>
+        <li><a href="tips.html">Tips</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h2>code first girls</h2>
+      <p class="link">"Code First Girls are dedicated to transforming tech by providing the skills, 
+        space and inspiration for women to become kick-ass developers and future leaders."
+        <br><br>
+        Visit <a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a> for more information.
+      </p>
+    </div>
+  </div>
+  <div class="text-center mt-5 copyright">
+    Copyright &copy; 2021 <a href="index.html">TechCode Savvy</a>
+  </div>
+</footer>
+
+
+
+  <script src="script/index.js"></script>
+</body>
+</html>

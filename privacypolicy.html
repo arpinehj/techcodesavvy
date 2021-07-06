@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCode Savvy - Privacy Policy</title>
+  <link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+<div class="cover">
+    <div class="container-fluid logo">
+        <a href="index.html"><img src="img/logo.jpeg" alt="TechCode Savvy logo" class="mx-auto d-block img-fluid"  width="280" height="345"></a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" onclick="openNav()" class="navbar navbar-expand-lg sticky-top">
+    <!-- NAVBAR LOGO SHOWN ON MOBILE -->  
+    <div class="navbar-brand">
+      <a class="nav-link d-lg-none" href="index.html">TechCode Savvy</a>
+    </div>  
+    <!-- NAVBAR TOGGLER -->  
+    <button class="navbar-toggler d-lg-none" onclick="openNav()" type="button">
+      <span class="navbar-toggler-close"></span>
+    </button>
+    <!-- NAVBAR & RESPONSIVE --> 
+    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row p-2 p-lg-0 mobileMenu" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webdevelopment.html">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pythonprogramming.html">Python Programming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasql.html">Data & SQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-right mt-2 ml-auto">
+            <li>
+              <input type="text" method="put" id="search" placeholder="Search" value="">
+              <button onclick="sendToPage()" type="submit" class="fa fa-search"></button>
+            </li>
+          </ul>
+    </div>
+</nav>
+<div id="overlay"></div>
+
+
+<!-- PRIVACY POLICY SECTION -->
+<section class="privacy-policy mt-5">
+    <div class="container">
+        <h2 class="text-center">Privacy Policy</h2>
+        <h4 class="text-center">Welcome to <span class="title">TechCode Savvy</span></h4>
+        <p>This website respects the privacy of the users. 
+            It does not collect any personal information about people who visit this website 
+            through internet. The author may make changes to the website at any time and for any reason.
+        </p>
+        <p>
+            By using this site, you indicate that you accept these terms of use and that you 
+            agree to abide by them.
+        </p>
+        <p>
+            Disclaimer:<br>
+            This website is owned by a female developer and created to share her fun experience with Code First Girls. 
+            The purpose is to inspire young female/non-binary individuals to apply the courses
+            and lead them to get a career in tech.
+        </p>
+            The images on this website are provided for educational purposes only.
+        </p>
+        <p>
+            Thank you for visiting this website.
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="container-fluid">
+    <div class="row justify-content-center mb-5">
+        <div class="col-3">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/codefirstgirls" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/codefirstgirls/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/CodeFirstGirls" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>about</h2>
+            <p>This blog is about my experience with Code First Girls after completing all three courses:
+            Web Development, Python and SQL.
+            I hope this will inspire young female/non-binary individuals to apply the courses
+            and lead them to get a career in tech.
+            It is time to close the gender gap in tech and get more girls into the field.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>links</h2>
+            <ul>
+            <li><a href="webdevelopment.html">Web Development</a></li>
+            <li><a href="pythonprogramming.html">Python Programming</a></li>
+            <li><a href="datasql.html">Data & SQL</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>code first girls</h2>
+            <p class="link">"Code First Girls are dedicated to transforming tech by providing the skills, 
+            space and inspiration for women to become kick-ass developers and future leaders."
+            <br><br>
+            Visit <a href="https://codefirstgirls.org.uk/" target="_blank">Code First Girls</a> for more information.
+            </p>
+        </div>
+    </div>
+    <div class="text-center mt-5 copyright">
+        Copyright &copy; 2021 <a href="index.html">TechCode Savvy</a>
+    </div>
+</footer>
+
+
+<script src="script/index.js"></script>
+</body>
+</html>
