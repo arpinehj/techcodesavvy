@@ -10,10 +10,19 @@ $(document).ready(function () {
     })
 });
 
+// Trigger the search button click on keyboard "enter"
+const input = document.getElementById("search");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("btn").click();
+  }
+});
+
 // search bar - takes an input and sends the user to a specific page
 function sendToPage(){
     const input = document.getElementById("search").value;
-
+    
     switch(input) {
         case 'Home': case 'home':
             location.href = "index.html";
@@ -38,6 +47,10 @@ function sendToPage(){
         case 'SQL': case 'sql':
             location.href = "datasql.html";
             break;
+        case 'CFGDegree': case 'cfgdegree': case 'degree': case 'Degree':
+        case 'nanodegree': case 'Nanodegree': case 'Nano': case 'nano':
+            location.href = 'cfgdegree.html';
+            break;
         case 'Privacy Policy': case 'privacy policy':
         case 'Privacy': case 'privacy':
         case 'Policy': case 'policy':
@@ -48,7 +61,7 @@ function sendToPage(){
             location.href = "tips.html";
             break;
         default:
-            alert('Invalid Input!');
+            alert('Invalid Input! You can only search keywords that are related to this website.');
     }
 };
 
