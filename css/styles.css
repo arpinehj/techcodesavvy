@@ -6,30 +6,23 @@ html {
   background: #fefefe;
   border: none;
 }
-
 .navbar .navbar-brand a {
-  font-family: 'Sacramento', cursive, Verdana, sans-serif;
-  /* fallback font */
+  font-family: "Sacramento", cursive, Verdana, sans-serif; /* fallback font */
   color: #ff5773;
   font-size: 2rem;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 0;
 }
-
 .navbar .navbar-nav a {
   color: #0f0f0f;
 }
-
 .navbar .navbar-nav a:hover {
   color: #ff5773;
   border-bottom: 1px solid #000;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
 .navbar .navbar-right input[type=text] {
   background-color: #f8f5f5;
   border-radius: 5px;
@@ -38,7 +31,6 @@ html {
   font-size: 17px;
   border: none;
 }
-
 .navbar .navbar-right button {
   float: right;
   padding: 8px 10px;
@@ -49,11 +41,9 @@ html {
   border: none;
   cursor: pointer;
 }
-
 .navbar .navbar-right button:hover {
   color: #ff5773;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 
 /* navbar links active */
@@ -68,7 +58,6 @@ html {
   width: 2em;
   height: 2em;
 }
-
 .navbar-toggler:focus {
   outline: none;
 }
@@ -95,21 +84,16 @@ html {
 }
 
 .navbar-toggler.active .navbar-toggler-close {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 .navbar-toggler.active .navbar-toggler-close::before {
   top: 0;
   opacity: 0;
 }
-
 .navbar-toggler.active .navbar-toggler-close::after {
   bottom: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 /* navbar responsive */
@@ -121,28 +105,24 @@ html {
     left: 0;
     overflow-x: hidden;
     padding: 30px;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: all 0.5s ease;
+    transform: translateX(-100%);
     transition: all 0.5s ease;
     background-color: #ff5773;
   }
   .mobileMenu.open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   .mobileMenu .navbar-nav a {
     color: #fefefe;
     font-size: 1.5rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .mobileMenu .navbar-nav a:hover {
     color: #fefefe;
     border-bottom: 1px solid #000;
     display: inline-block;
     width: auto;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
   }
   .mobileMenu .navbar-right input[type=text] {
     background-color: #f8f5f5;
@@ -151,7 +131,7 @@ html {
     line-height: 5px;
     font-size: 17px;
     border: none;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .mobileMenu .navbar-right button {
     float: right;
@@ -165,11 +145,9 @@ html {
   }
   .mobileMenu .navbar-right button:hover {
     color: #0f0f0f;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
   }
 }
-
 /* mobile nav */
 .active a {
   display: inline-block;
@@ -191,24 +169,19 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-
 #overlay.open {
   display: block;
 }
 
 /* cover - logo */
 .cover {
-  background-color: #ff7f50;
-  /* for browsers that do not support gradients */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5773), to(#ff7f50));
+  background-color: #ff7f50; /* for browsers that do not support gradients */
   background-image: linear-gradient(#ff5773, #ff7f50);
 }
-
 .cover .container-fluid {
   background-color: #fefefe;
   opacity: 0.7;
 }
-
 .cover img {
   width: 40vh;
   height: 20vh;
@@ -217,34 +190,26 @@ html {
 .blog h2, .blog h5 {
   text-transform: none;
 }
-
 .blog .container {
   width: 80%;
   margin: 3rem auto;
 }
-
 .blog .btn {
   background-color: #ff5773;
   color: #fefefe;
 }
-
 .blog .btn:hover {
   color: #0f0f0f;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
 .blog .link a {
   text-decoration: none;
   color: #fefefe;
 }
-
 .blog .link a:hover {
   color: #0f0f0f;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
 .blog img {
   width: 100%;
 }
@@ -253,23 +218,18 @@ html {
   width: 80%;
   margin: 3rem auto;
 }
-
 .side-blog .fa {
   padding: 8px 16px;
   color: #0f0f0f;
 }
-
 .side-blog .fa:hover {
   text-decoration: none;
   color: #ff5773;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
 .side-blog a {
   color: #ff5773;
 }
-
 .side-blog a:hover {
   color: #0f0f0f;
 }
@@ -277,24 +237,19 @@ html {
 footer h2 {
   text-transform: capitalize;
 }
-
 footer ul li {
   list-style: none;
 }
-
 footer ul li a {
   color: #0f0f0f;
   margin-left: -2.5em;
 }
-
 footer ul li a:hover {
   color: #ff5773;
   border-bottom: 1px solid #000;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   text-decoration: none;
 }
-
 footer .social-icons {
   margin-top: 5rem;
   font-size: 2rem;
@@ -302,22 +257,17 @@ footer .social-icons {
   background-color: #ff5773;
   border-radius: 25px;
 }
-
 footer .social-icons a {
   color: #fefefe;
   padding: 10px;
 }
-
 footer .social-icons a:hover {
   color: #0f0f0f;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
 footer .link a {
   color: #ff5773;
 }
-
 footer .link a:hover {
   color: #0f0f0f;
 }
@@ -338,23 +288,25 @@ footer .link a:hover {
 }
 
 .privacy-policy .title {
-  font-family: 'Sacramento', cursive, Verdana, sans-serif;
-  /* fallback font */
+  font-family: "Sacramento", cursive, Verdana, sans-serif; /* fallback font */
   font-size: 2rem;
   color: #ff5773;
 }
 
 .copyright a {
-  font-family: 'Sacramento', cursive, Verdana, sans-serif;
-  /* fallback font */
+  font-family: "Sacramento", cursive, Verdana, sans-serif; /* fallback font */
   font-size: 1.3rem;
   color: #ff5773;
 }
-
 .copyright a:hover {
   color: #0f0f0f;
   text-decoration: none;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.cfgdegree-info a {
+  color: #ff5773;
+}
+.cfgdegree-info a:hover {
+  color: #0f0f0f;
+}/*# sourceMappingURL=styles.css.map */

@@ -347,4 +347,13 @@ footer {
         }
     }
 }
-    
+
+.cfgdegree-info {
+  a {
+    color: $pinkcolor;
+
+    &:hover {
+        color: $textcolor;
+    }
+}
+}
